@@ -1,6 +1,6 @@
 const person = {
   name: "jkj",
-  age: 21,
+  age: 19,
   marry: false,
   langueges: ["ru", "en"],
   isProgramer: true,

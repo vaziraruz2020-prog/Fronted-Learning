@@ -1,0 +1,45 @@
+html {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #3c00ff;
+    font-size: 48px;
+    width: 100%;
+    height: 100%;
+    background: url(../ХЗ/maxresdefault.jpg) 0 0 / cover no-repeat fixed;
+}
+/* .wrapper {
+    min-height: 100%;
+    width: 100%;
+    background: url(../ХЗ/maxresdefault.jpg) 0 0 / cover no-repeat fixed;
+} */
+
+.TI_LOX {
+}
+.DUShA {
+}
+.INACHE {
+    color: red;
+}
+.TNT250 {
+}
+
+.TNT250::after {
+    content: "";
+    display: block;
+    width: 1000px;
+    height: 300px;
+    background: url(./TNT_JE2_BE1.webp) 350px 0 no-repeat;
+}
+
+.OPLATA {
+    
+}
+button {
+    border-radius: 100px;
+    width: 500px;
+    height: 100px;
+    background-color: brown;
+    font-size: 30px;
+}

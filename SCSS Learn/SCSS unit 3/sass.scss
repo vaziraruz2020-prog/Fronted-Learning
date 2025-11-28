@@ -1,0 +1,214 @@
+@use 'variebles' with (
+$base: #010101,
+$primary: #222222,
+$secondary: #456576
+);
+
+$accent: #723122;
+
+p {
+  //$accent: #ff5733;
+  $accent: #ff5733 !global;
+  color: $accent;
+}
+
+h2 {
+  color: $accent;
+}
+
+h1 {
+  color: $accent;
+}
+
+
+body {
+  color: variebles.$base;
+
+  article {
+    color: variebles.$base;
+  }
+}
+
+// Говорим о всех articles внутри body
+
+div > p {
+  color: $accent;
+}
+
+// если мы говорим о прямом дочернем элементе а не о всех элементах p
+
+
+.red, .blue {
+  h1, p {
+    color: $accent;
+  }
+}
+
+// Это если мы хотим чтобы у разных классов с одинаковами элементами имели одинаковые свойства
+
+
+.main {
+  font: {
+    family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+    size: 16px;
+    weight: bold;
+  }
+  margin: {
+    left: 5px;
+    right: 15px;
+  }
+}
+
+.card {
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
+
+  :not(&:first-child) {
+    margin-bottom: 30px;
+  }
+
+  &-wrap {
+    color: $accent;
+  }
+
+  body & {
+    color: $accent;
+  }
+}
+
+
+%template {
+  color: red;
+}
+
+.red {
+  @extend %template;
+  background-color: #fff;
+}
+
+.blue {
+  @extend %template;
+}
+
+.fg {
+  @extend .main;
+}
+
+$light: true;
+
+@if $light {
+  body {
+    color: white;
+    background: black;
+  }
+} @else {
+  body {
+    color: black;
+    background: white;
+  }
+}
+
+$size: 'big';
+
+@if $size == 'big' {
+  div {
+    width: 100px;
+  }
+} @else if $size == 'medium' {
+  div {
+    width: 50px;
+  }
+} @else if $size == 'small' {
+  div {
+    width: 25px;
+  }
+} @else {
+  div {
+    width: 10px;
+  }
+}
+
+@for $i from 1 through 3 {
+  .btn-#{$i} {
+    width: #{$i * 100}px;
+  }
+}
+
+@function fn($arg1, $arg2) {
+  @return $arg1 + $arg2;
+}
+
+@function fn1($arg1: 1, $arg2) {
+  @return $arg1 + $arg2;
+}
+
+@function fn2($args...) {
+  @return $args;
+}
+
+h1 {
+  color: fn2(red, blue);
+}
+
+$colors: red, blue, green;
+
+@each $color in $colors {
+  .btn-#{$color} {
+    background: $color;
+  }
+}
+
+$colors1: (red: #f00, green: #00f, blue: #00f);
+
+h1 {
+  color: map-get($colors1, red);
+}
+
+$colors2: (
+        red: #f00,
+        green: #00f,
+        blue: #00f
+);
+
+@each $color5, $value in $colors2 {
+  .#{$color5} {
+    color: $value;
+  }
+}
+
+
+$colors3: (
+        $day2: (
+                text: black,
+                background: white
+        ),
+        $night2: (
+                text: white,
+                background: black
+        )
+);
+
+@function theme($h24, $type) {
+  @return map-get(map-get($colors3, $h24), $type);
+}
+
+.class {
+  color: theme(day2, text);
+  background-color: theme(day2, background);
+}
+
+
+$v: true;
+
+h1 {
+  @if $v {
+    color: green;
+  } @else {
+    color: red;
+  }
+}

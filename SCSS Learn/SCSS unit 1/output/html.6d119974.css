@@ -1,0 +1,10 @@
+body:before {
+  white-space: pre;
+  content: "Error: Missing argument $num2.\a   ┌──> styles\\css.scss\a 36│     width: i.div(500px - 200px);\d \a   │            ^^^^^^^^^^^^^^^^^^^^ invocation\a   ╵\a   ┌──> styles\\_functions.scss\a 1 │ @function div($num1, $num2) {\d \a   │           ━━━━━━━━━━━━━━━━━ declaration\a   ╵\a   styles\\css.scss 36:12  div()\a   styles\\css.scss 36:12  root stylesheet";
+  border-bottom: 2px solid #000;
+  margin-bottom: 1em;
+  padding: 1em;
+  font-family: Source Code Pro, SF Mono, Monaco, Inconsolata, Fira Mono, Droid Sans Mono, monospace;
+  display: block;
+}
+/*# sourceMappingURL=html.6d119974.css.map */

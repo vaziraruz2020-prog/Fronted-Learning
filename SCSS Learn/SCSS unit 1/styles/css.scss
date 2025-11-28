@@ -1,0 +1,87 @@
+@use 'placeholders';
+@use 'importer' as i;
+@use 'sass:color';
+@use 'sass:string';
+@use 'sass:math';
+
+
+
+
+.container {
+    // border: 5px solid i.$main-clor-5;
+    background: i.$main-clor-3;
+    max-width: 800px;
+    margin: 20px;
+    padding: 2em;
+
+    border: {
+        width: 5px;
+        style: solid;
+        color: i.$main-clor-2 ;
+        radius: 15%;
+    }
+
+    .cards__wrapper {
+
+        @extend %fullsize;
+        // width: 100%;
+        // height: 100%;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // flex-wrap: wrap;
+        @include i.d-flex(center, center, wrap)
+    }
+}
+
+
+
+.block {
+
+    @include i.position2(relative, top, 100px, left, 30px, 100);
+    width: i.div(500px, 300px);
+    height: 200px;
+    background: i.$main-clor-4;
+
+    &::before {
+        display: block;
+        content: "#{i.sumPro(1,1,1,1,1,234,24,234,23,423,4,24,23,5,53,5,235,23,523,5,4,12,124,14,124,22)}";
+        color: i.$main-clor-8;
+    }
+
+    &:after {
+        content: "#{i.sum(-100,101,1)}";
+        color: i.$main-clor-5;
+    }
+
+    margin: {
+        bottom: 10px;
+    }
+}
+
+
+.built-it-modules {
+    @extend %simpleBlock;
+    // background-color: i.$main-clor-7;
+    // background-color: #{color.invert(i.$main-clor-7)} ;
+    // background-color: #{color.mix(i.$main-clor-2, i.$main-clor-4, 70%)} ;
+    background-color: #{color.adjust(i.$main-clor-2, $red: 15, $green: 30, $blue: 70, $alpha: -0.7)};
+
+    &:before {
+        display: block;
+        // content: "#{math.$max-number}";
+        // content: "#{math.$pi}";
+        // content: "#{math.ceil(4.9)}";
+        // content: "#{math.floor(4.9)}";
+        // content: "#{math.max(4.9, 988, 74.5, 3738, 54438482357578)}";
+        // content: "#{math.pow(2,3)}";
+        content: "#{math.sqrt(57)}";
+    }
+
+    &::after {
+        // content: "#{string.unique-id()}";
+        // content: "#{string.to-lower-case(HUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUY)}";
+        // content: "#{string.to-upper-case(huuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuy)}";
+        content: "Length: #{string.length(ehr)}";
+    }
+}

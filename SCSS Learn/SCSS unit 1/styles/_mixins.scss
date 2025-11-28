@@ -1,0 +1,32 @@
+@mixin d-flex($justify: start, $align: stretch, $wrap: nowrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+@mixin position1($name, $top-or-bottom, $left-or-right, $z-index: 1) {
+    position: $name;
+    #{$top-or-bottom}: 0;
+    #{$left-or-right}: 0;
+    z-index: $z-index;
+}
+
+@mixin size1($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+@mixin size2($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin position2($position, $top-or-bottom, $top-or-bottom-value, $left-or-right, $left-or-right-value, $z-index: 1) {
+    position: $position;
+    #{$top-or-bottom}: $top-or-bottom-value;
+    #{$left-or-right}: $left-or-right-value;
+    z-index: $z-index;
+}
+@mixin fluid-text($min: 1, $max: 100000000000000000000000000000000000000000000000000000000000000000000000000) {
+    font-size: clamp(#{$min}px, #{$max / 1920 * 100 }vw, #{$max}px);
+}

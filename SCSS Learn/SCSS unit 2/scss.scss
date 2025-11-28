@@ -1,0 +1,48 @@
+body {
+  header {
+    table {
+      background-color: #fff;
+      color: black;
+      caption {
+        background-color: #b41010;
+      } 
+      tr {
+        background-color: #b41010;
+
+        th {
+          color: #9A9CA5;
+        }
+
+        td {
+          color: #1e212c;
+        }
+      }
+    }
+  }
+}
+
+// .grid {
+//     $colums: 1;
+
+//     display: grid;
+//     grid-template-columns: repeat(var($colums), 1fr);
+
+//     @for $i from 1 through 12{
+//         element#{$i} {
+//             $colums: #{$i};
+//         }
+//     }
+// }
+// @function getSize($multiplier: 1) {
+//   @return #{$multiplier * 8}px;
+// }
+
+// .box-1 {
+//   padding: getSize(); 8px
+// }
+// .box-2 {
+//   padding: getSize(2); 16px
+// }
+// .box-3 {
+//   padding: getSize(4); 32px
+// }

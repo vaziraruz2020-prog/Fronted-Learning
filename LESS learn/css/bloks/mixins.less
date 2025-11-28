@@ -1,0 +1,15 @@
+// main: ../less.less
+
+.btn(@bg) {
+    background-color: @bg;
+
+    & when(lightness(@bg) > 60) {
+        color: @b;
+    }
+
+    &:focus,
+    &:hover {
+        background-color: darken(@bg, 15%);
+    }
+}
+

@@ -1,0 +1,22 @@
+{
+  "name": "vs",
+  "version": "1.0.0",
+  "description": "preprocessors-learning",
+  "source": "html.html",
+  "scripts": {
+    "let": "sass --watch styles:public/css",
+    "help": "sass --help",
+    "serve": "parcel serve --dist-dir output"
+  },
+  "keywords": [
+    "Suharik"
+  ],
+  "author": "Suharik",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.93.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  }
+}

@@ -27,7 +27,7 @@ async function start() {
             method: 'GET',
         })
         const data = await resp.json()
-        // console.log(resp)
+        console.table(resp)
         // console.log(data)
         setTimeout(() => {
             USERS = data
@@ -47,6 +47,7 @@ function render(users = []) {
         list.innerHTML = html
     }
 }
+
 
 function toHTML(user) {
     return `

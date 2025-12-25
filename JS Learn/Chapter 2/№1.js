@@ -217,3 +217,4 @@ const person8 = JSON.parse(JSON.stringify(person7)) // ссылки на вло�
 person8.qpery = 480391
 console.log(person8)
 console.log(person7.age)
+console.log(person2)

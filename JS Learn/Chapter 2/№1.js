@@ -218,3 +218,4 @@ person8.qpery = 480391
 console.log(person8)
 console.log(person7.age)
 console.log(person2)
+console.log(person5)

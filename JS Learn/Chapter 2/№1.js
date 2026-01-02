@@ -1,3 +1,9 @@
+// Операторы
+
+'use strict' // Строгий режим
+
+
+
 // Объекты - набор свойств:
 // "имя: значение"
 
@@ -17,7 +23,7 @@ const name = {
 // dir - отображает все свойтсва объекта 
 // table - отображает свойства в виде таблицы
 
-a = 20
+let a = 20
 // Выражение присваивания
 
 let l = 1
@@ -141,7 +147,7 @@ const userProfile = {
     postQty: postQty,
     signedAgrement: false
 }
-console.log(userProfile)
+// console.log(userProfile)
 
 // Coкpaщeнo
 const userProfilIY = {
@@ -149,7 +155,7 @@ const userProfilIY = {
     postQty,
     signedAgrement: false
 }
-console.log(userProfilIY)
+// console.log(userProfilIY)
 
 const myCityx = {
     city: 'New York',
@@ -169,8 +175,8 @@ myCityx.cityGreeting()
 const gh = 10
 let tty = gh // copy by value
 tty = 1470347103
-console.log(gh)
-console.log(tty)
+// console.log(gh)
+// console.log(tty)
 
 const person = {
     asdjpo: 81309,
@@ -180,8 +186,8 @@ const person2 = person // copy by reference
 person2.asdjpo = 248301772956
 person2.ewfho = 'yfe888wf'
 
-console.log(person.asdjpo)
-console.log(person.ewfho)
+// console.log(person.asdjpo)
+// console.log(person.ewfho)
 
 // Как избежать мутации?
 // Вариант 1
@@ -193,8 +199,8 @@ const person3 = {
 const person4 = Object.assign({}, person3)
 person4.age = 26
 person4.uowfh = 1273
-console.log(person4) // 26
-console.log(person3.age) // 25
+// console.log(person4) // 26
+// console.log(person3.age) // 25
 
 // Вариант 2
 const person5 = {
@@ -204,8 +210,8 @@ const person5 = {
 
 const person6 = { ...person5 } // Оператор разделения объекта на свойства
 person6.age = 26
-console.log(person6) // 26
-console.log(person5.age) // 25
+// console.log(person6) // 26
+// console.log(person5.age) // 25
 
 // Вариант 3
 const person7 = {
@@ -215,7 +221,134 @@ const person7 = {
 
 const person8 = JSON.parse(JSON.stringify(person7)) // ссылки на вложеннные обЪекты не сохраняются
 person8.qpery = 480391
-console.log(person8)
-console.log(person7.age)
+// console.log(person8)
+// console.log(person7.age)
 
 
+// Функции
+let v = 5
+let g = 3
+
+let kkl
+
+kkl = v + g
+console.log(kkl)
+
+v = 8
+g = 12
+
+function summa(a,b) {
+    console.log(a + b)
+}
+summa(v,g)
+
+console.log(summa)
+
+function myFn(a,b) {
+//            | | 
+//          Параметры
+    let c               
+    a = a + 1
+    c = a + b
+    return c
+}
+myFn(10, 3) // Вызов Функци
+//    |  | 
+//  Аргументы
+
+
+// Передача значения по ссылкее
+const pruo = {
+    name: 90,
+    age:12389,
+}
+
+function IPA(person) {
+    person.age += 1
+    return person
+}
+
+IPA(pruo)
+console.log(pruo.age)
+// ТАКОЕ НЕ РЕКОМЕНДУЕТСЯ
+
+// Правильный способ
+const qweiop = {
+    wep: 123490,
+    age:213789
+}
+
+function IQA(person) {
+    const new_patch = {...person}
+    new_patch.age += 1
+    return new_patch
+}
+const new_patchUI = IQA(qweiop)
+console.log(qweiop.age)
+console.log(new_patchUI.age)
+// Объект qweiop не изменился
+
+
+
+// CallBack Fns
+function fnw() {
+    console.log(1 + 2)
+}
+function callbBack1(callBack) {
+    callBack()
+}
+callbBack1(fnw)
+
+
+function printMyName() {
+    console.log('Bogdan')
+}
+setTimeout(printMyName, 1000)
+
+
+
+
+// Области видимости
+
+let yuw  // Объявлена пременная yuw
+let huii // Объявлена пременная huii
+// Глобальные переменные
+
+function MUYDH() {
+    let huii // Локальная переменная создана в рамках функции
+    yuw = 10 // Изменяется значение глобальной переменной т.к переменной yuw нету в рамках функции
+    huii = true // Изменяется значение переменной в рамках функции
+    console.log(huii) // Выводим переменную, которая была объявлена в рамках фунциии 
+}
+MUYDH()
+console.log(yuw) // У глобальной переменной остаются изменения с функции
+console.log(huii) // Глобальная переменная оставила все то же значение 
+
+// Цепочка областей видимости
+const gjh = 5
+function qwui() {
+    function eruio() {
+        console.log(gjh) // 5
+        function fdjis() {
+            let gjh = 123
+            function adsh() {
+                function hs() {
+                    console.log(gjh) // 123
+                }
+                hs()
+            }
+            adsh()
+        }
+        fdjis()
+    }
+    eruio() 
+}
+qwui()
+
+// function sdhfpi() {
+//     ppqaf = 10 // Переменаая "ppqaf" будет автоматически объявлена в глобальной видимости
+//     console.log(ppqaf)
+// }
+// sdhfpi()
+// console.log(ppqaf)
+// // НЕ РЕКОМЕНДУЕТСЯ

@@ -864,3 +864,12 @@ switch (month) {
 }
 
 // Тернарный оператор
+
+let value = -11
+console.log(value >=0 ? value : 'Value is negative')
+
+value = -5
+const resu = value >=0 ? value : 'Value is negative'
+console.log(resu)
+
+// Циклы

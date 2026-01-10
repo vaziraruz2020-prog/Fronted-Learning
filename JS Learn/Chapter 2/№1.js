@@ -873,3 +873,14 @@ const resu = value >=0 ? value : 'Value is negative'
 console.log(resu)
 
 // Циклы
+
+// Цикл for
+for (let i = 0; i < 5; i++ ) {
+    console.log(i)
+}
+
+let Array123 = ['guy', 34, true, undefined]
+
+for (let i = 0; i < Array123.length; i++) {
+    console.log(Array123[i])
+}

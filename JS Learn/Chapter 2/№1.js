@@ -1,6 +1,6 @@
 // Операторы
 
-'use strict' // Строгий режим 
+// 'use strict' // Строгий режим 
 
 
 
@@ -569,23 +569,23 @@ for (let i = 0; i < 5; i++) {
 'abc';
 a += 3;
 let c = a + b;
-let d ='Good' + 'Evening';
-myFunction(c,d);
+let d = 'Good' + 'Evening';
+myFunction(c, d);
 console.log('Hey');
 
 // Массивы
 
-const myArray1 = [1,2,3]
+const myArray1 = [1, 2, 3]
 console.log(myArray1)
 
-const myArray2 = new Array(1,2,3)
-console.log(myArray2) 
+const myArray2 = new Array(1, 2, 3)
+console.log(myArray2)
 
 console.log(myArray1 === myArray2)
 
 const myArray3 = myArray2
 
-console.log(myArray3 === myArray2) 
+console.log(myArray3 === myArray2)
 
 
 // Структура Массива
@@ -606,12 +606,12 @@ const myObject = {
 }
 console.log(myObject)
 
-const myArray4 = [1,2,3]
+const myArray4 = [1, 2, 3]
 console.log(myArray4)
 
 // Чтение значений массива
 
-const myArray = [1, true,'a']
+const myArray = [1, true, 'a']
 console.log(myArray) // [1, true, 'a']
 
 console.log(myArray[0]) // 1
@@ -627,7 +627,7 @@ myArray.length = 3
 
 // Добавление/Изменение свойтсв массива
 
-const myArray5 = [1,2,3,4]
+const myArray5 = [1, 2, 3, 4]
 console.log(myArray5) // [1, 2, 3, 4]
 console.log(myArray5.length) // 4
 
@@ -642,7 +642,7 @@ console.log(myArray5) // [1, 2, 'abc', 4, true]
 console.log(myArray5.length) // 5
 
 // Push
-const myArray6= [1,2,3]
+const myArray6 = [1, 2, 3]
 console.log(myArray6) // [1, 2, 3]
 
 myArray6.push(4)
@@ -661,13 +661,13 @@ myArray7.pop()
 
 console.log(myArray7) // [1, 2]
 
-const removedElement= myArray7.pop()
+const removedElement = myArray7.pop()
 
 console.log(myArray7) // [1]
 console.log(removedElement) // 2
 
 // Unshift
-const myArray8 = [1,2,3]
+const myArray8 = [1, 2, 3]
 console.log(myArray8) // [1, 2, 3]
 
 myArray8.unshift(4)
@@ -692,7 +692,7 @@ console.log(myArray9) // [3]
 console.log(removedElement) // 2
 
 // forEach
-const myArray10 = [1,2,3]
+const myArray10 = [1, 2, 3]
 console.log(myArray10) // [1,2,3]
 
 myArray10.forEach(el => console.log(el ** 2))
@@ -704,7 +704,7 @@ console.log(myArray10) //  [1,2,3]
 // Оригинал не изменился
 
 // Map
-const myArray11 = [1,2,3]
+const myArray11 = [1, 2, 3]
 console.log(myArray11) // [1,2,3]
 
 const newArraay = myArray11.map(el => el * 3)
@@ -717,7 +717,7 @@ console.log(newArraay) // [3,6,9]
 console.log(newArraay2) // [undefined,undefined,undefined]
 // Потому что функция ничего не возвращает
 
-newArraay2 =  myArray11.map((el) => {
+newArraay2 = myArray11.map((el) => {
     return el * 3
 })
 
@@ -736,14 +736,14 @@ const userProfile2 = {
     hasSignedAgreement: false,
 }
 const { name1, userAge } = userProfile2
-const { hasSignedAgreement} = userProfile2
+const { hasSignedAgreement } = userProfile2
 
 console.log(name1)
 console.log(userAge)
 
 // Деструктуризация массивов
 
-const fruits = ['Apple','Banana']
+const fruits = ['Apple', 'Banana']
 
 const [fritOne, fruitTwo] = fruits
 
@@ -804,9 +804,9 @@ console.log(val)
 const ageCheck = (age) => {
     if (age > 21) {
         console.log('Is adult')
-    } else if ( age >= 16) {
+    } else if (age >= 16) {
         console.log('Is youth')
-    } else if ( age >= 12 ) {
+    } else if (age >= 12) {
         console.log('Is teen')
     } else {
         console.log('Is kid')
@@ -822,14 +822,14 @@ ageCheck(age2)
 ageCheck(age3)
 ageCheck(age4)
 
-const sumPositiveNumbers = (a,b) => {
+const sumPositiveNumbers = (a, b) => {
     if (typeof a !== 'number' && typeof b !== 'number') {
         console.log('Both arguments are not numbers')
     } else if (typeof a !== 'number' || typeof b !== 'number') {
         console.log('One of the arguments is not a number')
-    } else if (a <= 0  && b <= 0) {
+    } else if (a <= 0 && b <= 0) {
         console.log('Numbers are not positive')
-    } else if (a <= 0  || b <= 0) {
+    } else if (a <= 0 || b <= 0) {
         console.log('One of the numbers is not positive')
     } else {
         console.log(a + b)
@@ -866,21 +866,67 @@ switch (month) {
 // Тернарный оператор
 
 let value = -11
-console.log(value >=0 ? value : 'Value is negative')
+console.log(value >= 0 ? value : 'Value is negative')
 
 value = -5
-const resu = value >=0 ? value : 'Value is negative'
+const resu = value >= 0 ? value : 'Value is negative'
 console.log(resu)
 
 // Циклы
 
 // Цикл for
-for (let i = 0; i < 5; i++ ) {
+for (let i = 0; i < 5; i++) {
     console.log(i)
 }
 
-let Array123 = ['guy', 34, true, undefined]
+let Array123 = ['guy', 34, true, null]
 
 for (let i = 0; i < Array123.length; i++) {
     console.log(Array123[i])
 }
+// Не рекомендуется использовать циклы с массивами
+
+Array123.forEach((element, index) => {
+    console.log(element, index)
+})
+// Рекомендуется
+
+// Цикл while
+let Condition
+while (Condition) {
+    // Блок кода с выполнением какх-либо действий
+}
+
+// Цикл do ... while
+
+do {
+    // Блок кода с выполнением какх-либо действий
+} while (Condition)
+
+// Цикл for ... in ...
+for (const key in Object) {
+    // Блок кода с выполнением какх-либо действий
+}
+
+for (const key in Array) {
+    // Блок кода с выполнением какх-либо действий
+}
+
+
+// Цикл for ... of ...
+
+for (const element of myArray1) {
+    // Блок кода с выполнением какх-либо действий
+    console.log(element)
+}
+
+for (const letter of 'String') {
+    // Блок кода с выполнением какх-либо действий
+    console.log(letter)
+}
+// forof не используется длс объектов
+
+// Модули
+
+import printMyName1 from './test.js'
+printMyName1()

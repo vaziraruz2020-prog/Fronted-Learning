@@ -82,23 +82,23 @@ function colorResult(result) {
 function computeNumbersWithAction(inp1, inp2, actionSymbol) {
   const inpNum1 = +inp1.value;
   const inpNum2 = +inp2.value;
-  // if (actionSymbol == '+') {
-  //     return inpNum1 + inpNum2
-  // } else if (actionSymbol == '-') {
-  //     return inpNum1 - inpNum2
-  // } else if (actionSymbol == '*') {
-  //     return inpNum1 * inpNum2
-  // } else {
-  //     return inpNum1 / inpNum2
-  // }
+  if (actionSymbol == '+') {
+      return inpNum1 + inpNum2
+  } else if (actionSymbol == '-') {
+      return inpNum1 - inpNum2
+  } else if (actionSymbol == '*') {
+      return inpNum1 * inpNum2
+  } else {
+      return inpNum1 / inpNum2
+  }
   // console.log( typeof inpNum1, typeof inpNum2)
 
-  const result = actionSymbol == "+" ? inpNum1 + inpNum2 : inpNum1 - inpNum2;
-  return result;
+  // const result = actionSymbol == "+" ? inpNum1 + inpNum2 : inpNum1 - inpNum2;
+  // return result;
 }
 
 submit.onclick = function () {
-    debugger
+    // debugger
   // if (action == '-') {
   //     const sum = Number(input1.value) - Number(input2.value)
   //     colorResult(sum)

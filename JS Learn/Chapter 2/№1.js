@@ -745,9 +745,9 @@ console.log(userAge)
 
 const fruits = ['Apple', 'Banana']
 
-const [fritOne, fruitTwo] = fruits
+const [fruitOne, fruitTwo] = fruits
 
-console.log(fritOne)
+console.log(fruitOne)
 console.log(fruitTwo)
 
 // Деструктуризация в функциях 
@@ -793,7 +793,7 @@ val = 5
 
 if (val < 5) {
     val += 20
-} else if (val = 5) {
+} else if (val === 5) {
     val += 10
 } else {
     val -= 20
@@ -928,5 +928,14 @@ for (const letter of 'String') {
 
 // Модули
 
-import printMyName1 from './test.js'
-printMyName1()
+import sum_sum from './test.mjs'
+sum_sum(5,6)
+
+import {
+    one as fuck,
+    two
+}
+from './test.mjs'
+
+console.log(fuck)
+console.log(two)

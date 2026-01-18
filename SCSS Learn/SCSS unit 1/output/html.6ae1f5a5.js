@@ -314,9 +314,9 @@ if (!parent || !parent.isParcelRequire) {
     // eval may also be disabled via CSP, so do a quick check.
     var supportsSourceURL = false;
     try {
-        (0, eval)('throw new Error("test"); //# sourceURL=test.js');
+        (0, eval)('throw new Error("test"); //# sourceURL=test.mjs');
     } catch (err) {
-        supportsSourceURL = err.stack.includes('test.js');
+        supportsSourceURL = err.stack.includes('test.mjs');
     }
     var ws;
     if (HMR_USE_SSE) ws = new EventSource('/__parcel_hmr');

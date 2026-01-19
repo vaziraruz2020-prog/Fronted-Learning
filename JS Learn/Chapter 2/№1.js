@@ -939,3 +939,5 @@ from './test.mjs'
 
 console.log(fuck)
 console.log(two)
+
+// Классыи прототипы

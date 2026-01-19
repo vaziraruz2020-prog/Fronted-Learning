@@ -167,3 +167,5 @@ JSON - JAVASCRIPT OBJECT NOTATION - формат обмена данными
 Выражение возвращает значение
 
 Типы циклов - for; for ... in ...; for ... of ...; while; do ... while
+
+Классыи прототипы

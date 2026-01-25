@@ -54,12 +54,12 @@ html, body {
 .main__about {
     padding-top: 180px;
     margin: 0px 0px 160px;
-    scroll-margin-top: 180px;
-}
+    scroll-margin-top: -100px
+}  
 
 .main__directions {
     padding-bottom: 180px;
-    scroll-margin-top: 160px;
+    scroll-margin-top: 20px;
 }
 
 .main__cert {
@@ -83,17 +83,17 @@ html, body {
 .main__program {
     padding-top: 110px;
     padding-bottom: 185px;
-
+    scroll-margin-top: -60px;
 }
 
 .main__blog {
     padding-bottom: 215px;
-    scroll-margin-top: 185px;
+    scroll-margin-top: 20px;
 }
 
 .main__contacts {
     padding-bottom: 185px;
-    scroll-margin-top: 200px;
+    scroll-margin-top: 30px;
 }
 
 .main__questions {

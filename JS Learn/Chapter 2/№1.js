@@ -941,3 +941,42 @@ console.log(fuck)
 console.log(two)
 
 // Классыи прототипы
+class Comment {
+    constructor(text) {
+        this.text = text
+        this.votesQty = 0
+    }
+    upvote() {
+        this.votesQty += 1
+    }
+
+}
+const firstCum = new Comment('firstCOmmment CUM ON MY FACEMOMMY~')
+console.log(firstCum)
+console.log(firstCum.constructor)
+console.log(firstCum.upvote)
+console.log(firstCum instanceof Comment)
+firstCum.upvote()
+firstCum.upvote()
+console.log(firstCum.votesQty)
+console.log(firstCum.hasOwnProperty('votesQty'))
+console.log(firstCum.hasOwnProperty('text'))
+console.log(firstCum.hasOwnProperty('upvote'))
+console.log(firstCum.hasOwnProperty('hasOwnProperty'))
+
+class NumbersArray extends Array {
+    sum() {
+        return this.reduce((acc, el) => acc += el, 0)
+    }
+}
+
+const myArrat = new NumbersArray(2,4,7,5,'4')
+
+console.log(myArrat)
+console.log(myArrat.sum())
+
+// Промисы
+fetch('https://jsonplaceholder.typicode.com/todos')
+    .then(res => res.json())
+    .then(res => console.log(res))
+    .catch(err => console.log(err))

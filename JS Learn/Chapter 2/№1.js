@@ -2,8 +2,6 @@
 
 // 'use strict' // Строгий режим 
 
-
-
 // Объекты - набор свойств:
 // "имя: значение"
 
@@ -43,7 +41,6 @@ myFunction(a, l)
 //     // все остальные переменные
 
 
-
 // Тип переменной определяется типом присвоенного значения
 const h = 10
 // h - число(Number)
@@ -53,13 +50,15 @@ const b = 'abc'
 // Типы:
 // Примитивные типы:
 // ПАМЯТЬ
-undefined; 'abc';
-25; true;
+undefined;
+'abc';
+25;
+true;
 
 
 // Ссылочный тип
 // ПАМЯТЬ
-const myFullName = { name: 'bogd', lastName: 'bogdyt' }
+const myFullName = {name: 'bogd', lastName: 'bogdyt'}
 const array = [1, 2, 3]
 
 const objectA = {
@@ -76,8 +75,6 @@ copyOfA.c = 'abc'
 // objectA.c -> 'abc'
 
 
-
-
 // Cтатическаая и Динамическая типизации
 // Cтатическая:
 // String a = 'abc'
@@ -92,11 +89,11 @@ a = 'abc' // String
 function p() {
     console.log('Hey there')
 }
+
 p()
 // // 'Hey there'
 p = 10
 // a() // Uncaught TypeError: a is not a function
-
 
 
 // Const для объявления переменных
@@ -208,7 +205,7 @@ const person5 = {
     age: 1e-24
 }
 
-const person6 = { ...person5 } // Оператор разделения объекта на свойства
+const person6 = {...person5} // Оператор разделения объекта на свойства
 person6.age = 26
 // console.log(person6) // 26
 // console.log(person5.age) // 25
@@ -240,6 +237,7 @@ g = 12
 function summa(a, b) {
     console.log(a + b)
 }
+
 summa(v, g)
 
 console.log(summa)
@@ -252,6 +250,7 @@ function myFn(a, b) {
     c = a + b
     return c
 }
+
 myFn(10, 3) // Вызов Функци
 //    |  | 
 //  Аргументы
@@ -279,33 +278,34 @@ const qweiop = {
 }
 
 function IQA(person) {
-    const new_patch = { ...person }
+    const new_patch = {...person}
     new_patch.age += 1
     return new_patch
 }
+
 const new_patchUI = IQA(qweiop)
 console.log(qweiop.age)
 console.log(new_patchUI.age)
 // Объект qweiop не изменился
 
 
-
 // CallBack Fns
 function fnw() {
     console.log(1 + 2)
 }
+
 function callbBack1(callBack) {
     callBack()
 }
+
 callbBack1(fnw)
 
 
 function printMyName() {
     console.log('Bogdan')
 }
+
 setTimeout(printMyName, 1000)
-
-
 
 
 // Области видимости
@@ -320,29 +320,37 @@ function MUYDH() {
     huii = true // Изменяется значение переменной в рамках функции
     console.log(huii) // Выводим переменную, которая была объявлена в рамках фунциии 
 }
+
 MUYDH()
 console.log(yuw) // У глобальной переменной остаются изменения с функции
 console.log(huii) // Глобальная переменная оставила все то же значение что и было при глобальном объявлении 
 
 // Цепочка областей видимости
 const gjh = 5
+
 function qwui() {
     function eruio() {
         console.log(gjh) // 5
         function fdjis() {
             let gjh = 123
+
             function adsh() {
                 function hs() {
                     console.log(gjh) // 123
                 }
+
                 hs()
             }
+
             adsh()
         }
+
         fdjis()
     }
+
     eruio()
 }
+
 qwui()
 
 // function sdhfpi() {
@@ -355,7 +363,7 @@ qwui()
 
 // Унарные операторы
 a++
-    + a
++ a
 delete name.title
 typeof a
 new Object()
@@ -511,12 +519,14 @@ const ST = (a, b) => a + b
 function multiply(value, multiplier = 1) {
     console.log(value * multiplier)
 }
+
 multiply(5)
 multiply(5 * 125)
 
 function Addition(value, additioner = 1) {
     console.log(value + additioner)
 }
+
 Addition(1, 100)
 
 let pizda = function (additioner, value = 1) {
@@ -735,8 +745,8 @@ const userProfile2 = {
     userAge: 13,
     hasSignedAgreement: false,
 }
-const { name1, userAge } = userProfile2
-const { hasSignedAgreement } = userProfile2
+const {name1, userAge} = userProfile2
+const {hasSignedAgreement} = userProfile2
 
 console.log(name1)
 console.log(userAge)
@@ -758,7 +768,7 @@ const userProfile3 = {
     hasSignedAgreement: false,
 }
 
-const userInfo = ({ name1, age }) => {
+const userInfo = ({name1, age}) => {
     if (!age) {
         return `User ${name1} has no comments`
     }
@@ -929,13 +939,14 @@ for (const letter of 'String') {
 // Модули
 
 import sum_sum from './test.mjs'
-sum_sum(5,6)
+
+sum_sum(5, 6)
 
 import {
     one as fuck,
     two
 }
-from './test.mjs'
+    from './test.mjs'
 
 console.log(fuck)
 console.log(two)
@@ -946,11 +957,13 @@ class Comment {
         this.text = text
         this.votesQty = 0
     }
+
     upvote() {
         this.votesQty += 1
     }
 
 }
+
 const firstCum = new Comment('firstCOmmment CUM ON MY FACEMOMMY~')
 console.log(firstCum)
 console.log(firstCum.constructor)
@@ -970,13 +983,28 @@ class NumbersArray extends Array {
     }
 }
 
-const myArrat = new NumbersArray(2,4,7,5,'4')
+const myArrat = new NumbersArray(2, 4, 7, 5, '4')
 
 console.log(myArrat)
 console.log(myArrat.sum())
 
 // Промисы
 fetch('https://jsonplaceholder.typicode.com/todos')
-    .then(res => res.json())
-    .then(res => console.log(res))
+    .then(res => {
+        console.log(res)
+        return res.json()
+    })
+    .then(json => console.log(json))
+    .catch(err => console.log(err))
+
+const getData = url =>
+    new Promise((resolve, reject) =>
+        fetch(url)
+        .then(res => res.json())
+        .then(json => resolve(json))
+        .catch(err => reject(err))
+    )
+
+getData('https://jsonplaceholder.typicode.com/todos')
+    .then(data => console.log(data))
     .catch(err => console.log(err))

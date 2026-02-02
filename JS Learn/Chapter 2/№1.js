@@ -1000,11 +1000,71 @@ fetch('https://jsonplaceholder.typicode.com/todos')
 const getData = url =>
     new Promise((resolve, reject) =>
         fetch(url)
-        .then(res => res.json())
-        .then(json => resolve(json))
-        .catch(err => reject(err))
+            .then(res => res.json())
+            .then(json => resolve(json))
+            .catch(err => reject(err))
     )
 
 getData('https://jsonplaceholder.typicode.com/todos')
+    .then(data => console.log(data))
+    .catch(err => console.log(err))
+
+// Async/Await
+
+
+// const asyncFn = async () => {
+//     if (asyncFn === 0) {
+//         return 'Success!'
+//     } else {
+//         throw new Error('jafl;sfpeoooooooooooooosgj4-2!@#$%^&**((())))_39h329hr9rjrr1234567!@#')
+//     }
+// }
+//
+// asyncFn()
+//     .then(value => console.log(value))
+//     .catch(err => console.log(err))
+
+const timerPromise = () =>
+    new Promise((resolve, reject) => setTimeout(() => {
+       return resolve()
+    }, 10000))
+
+
+// const asynfn = async () => {
+//     console.log('Timer starts')
+//     await timerpromise()
+//     console.log('Timer ended')
+// }
+
+// console.log(asynfn())
+
+const asyncfn = async () => {
+    console.log('Timer starts')
+    const startTime = performance.now()
+    await timerPromise()
+    const endTime = performance.now()
+    // console.log('Timer ended on:', endTime)
+    console.log('Timer ended. Time pass: ', endTime - startTime )
+}
+
+console.log(asyncfn())
+
+const getData2 =async (url) => {
+    const res = await fetch(url)
+    const json = await res.json()
+    return json
+}
+
+const url = 'https://jsonplaceholder.typicode.com/todos'
+
+
+try {
+    const data = await getData2(url)
+    console.log(data)
+} catch(err) {
+    console.log(err)
+}
+
+getData2('https://jsonplaceholder.typicode.com/todos')
     .then(data => console.log(data))
     .catch(err => console.log(err))

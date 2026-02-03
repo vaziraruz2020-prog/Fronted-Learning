@@ -58,7 +58,7 @@ true;
 
 // Ссылочный тип
 // ПАМЯТЬ
-const myFullName = {name: 'bogd', lastName: 'bogdyt'}
+const myFullName = { name: 'bogd', lastName: 'bogdyt' }
 const array = [1, 2, 3]
 
 const objectA = {
@@ -205,7 +205,7 @@ const person5 = {
     age: 1e-24
 }
 
-const person6 = {...person5} // Оператор разделения объекта на свойства
+const person6 = { ...person5 } // Оператор разделения объекта на свойства
 person6.age = 26
 // console.log(person6) // 26
 // console.log(person5.age) // 25
@@ -278,7 +278,7 @@ const qweiop = {
 }
 
 function IQA(person) {
-    const new_patch = {...person}
+    const new_patch = { ...person }
     new_patch.age += 1
     return new_patch
 }
@@ -363,7 +363,7 @@ qwui()
 
 // Унарные операторы
 a++
-+ a
+    + a
 delete name.title
 typeof a
 new Object()
@@ -745,8 +745,8 @@ const userProfile2 = {
     userAge: 13,
     hasSignedAgreement: false,
 }
-const {name1, userAge} = userProfile2
-const {hasSignedAgreement} = userProfile2
+const { name1, userAge } = userProfile2
+const { hasSignedAgreement } = userProfile2
 
 console.log(name1)
 console.log(userAge)
@@ -768,7 +768,7 @@ const userProfile3 = {
     hasSignedAgreement: false,
 }
 
-const userInfo = ({name1, age}) => {
+const userInfo = ({ name1, age }) => {
     if (!age) {
         return `User ${name1} has no comments`
     }
@@ -1026,7 +1026,7 @@ getData('https://jsonplaceholder.typicode.com/todos')
 
 const timerPromise = () =>
     new Promise((resolve, reject) => setTimeout(() => {
-       return resolve()
+        return resolve()
     }, 10000))
 
 
@@ -1044,12 +1044,12 @@ const asyncfn = async () => {
     await timerPromise()
     const endTime = performance.now()
     // console.log('Timer ended on:', endTime)
-    console.log('Timer ended. Time pass: ', endTime - startTime )
+    console.log('Timer ended. Time pass: ', endTime - startTime)
 }
 
 console.log(asyncfn())
 
-const getData2 =async (url) => {
+const getData2 = async (url) => {
     const res = await fetch(url)
     const json = await res.json()
     return json
@@ -1061,7 +1061,7 @@ const url = 'https://jsonplaceholder.typicode.com/todos'
 try {
     const data = await getData2(url)
     console.log(data)
-} catch(err) {
+} catch (err) {
     console.log(err)
 }
 

@@ -28,3 +28,40 @@ res(Arr, y);
     let result = func(a, b)
     console.log(result)
 })(let, 10, 22);
+/*
+
+arr.push(items) - Добавить элемент в конец массива
+arr.pop() - Удалить элемент из конца массива
+arr.shift() - Удалить элемент из начала массива
+arr.unshift(...items) - Добавить элемент в начало массива
+arr.splice([startingIndex], deleteCount)
+*/
+console.log(y)
+
+y.push(22)
+console.log(y)
+y.pop()
+console.log(y)
+
+y.unshift(22)
+console.log(y)
+y.shift()
+console.log(y)
+
+y.splice(3,2)
+console.log(y)
+
+for (let i = 0; i < y.length; i += 0.5) {
+    console.log(y[i]);
+}
+
+for (const element of y) {
+    console.log(Math.sqrt(element ** 6))
+}
+
+const huy = (item, index) => {
+    console.log(`${item} => ${index}`)
+
+}
+
+y.forEach(huy)

@@ -1,3 +1,5 @@
+// Теория
+
 let w = '10'
 let у = 1
 
@@ -11,9 +13,8 @@ function let(a, b) {
 }
 
 const Arr = arr => arr.map(el => el + 3);
-    // arr.map(el => console.log(el + 2))
-    // return arr
-
+// arr.map(el => console.log(el + 2))
+// return arr
 
 
 const res = (func, t) => {
@@ -48,7 +49,7 @@ console.log(y)
 y.shift()
 console.log(y)
 
-y.splice(3,2)
+y.splice(3, 2)
 console.log(y)
 
 for (let i = 0; i < y.length; i += 0.5) {
@@ -95,7 +96,7 @@ for (let key in x) {
 }
 // for_in is for not iterable stuff
 
-let xy = { ...x }
+let xy = {...x}
 xy.age = 1
 
 console.log(xy)
@@ -108,13 +109,114 @@ class Person {
         this.job = job;
         this.isMarried = isMarried;
     }
-     fnc(func, t) {
+
+    fnc(func, t) {
         let reult = func(t);
         console.log(reult);
     }
 }
 
-const person = new Person('Амир', 13,'student', false );
+const person = new Person('Амир', 13, 'student', false);
 
 console.log(person);
 person.fnc(Arr, y)
+
+
+// Пример с выбором элементов. Селекторы. CSS классы
+
+let htmlTitle2 = document.querySelector('h2');
+htmlTitle2.classList.add('red')
+console.log(htmlTitle2);
+
+let htmlTitle3 = document.querySelector('h3');
+console.log(htmlTitle3);
+
+let headings = document.querySelectorAll('h2')
+console.log(headings);
+
+for (let item of headings) {
+    item.classList.remove('red')
+    item.classList.remove('green')
+    item.classList.add('red-text')
+    item.classList.add('green')
+    item.classList.remove('red-text')
+    item.classList.remove('green')
+
+}
+
+const p = document.querySelectorAll('p')
+// for (let item of p) {
+//     item.classList.add('red')
+//     item.classList.add('green-text')
+// }
+p.forEach(element => element.classList.add('green-text'))
+p.forEach(element => element.classList.remove('green-text'))
+
+
+/*
+    element.classList.add()
+    .add() - добавить класс
+    .remove() - убрать класс
+    .toggle() - добавляет класс если его не было и убирает класс если он был
+    .contains() - возвращает true или false в зависимости от того был класс или нет
+ */
+
+htmlTitle2.classList.add('green')
+htmlTitle2.classList.remove('green')
+
+htmlTitle2.classList.toggle('green')
+console.log(htmlTitle2.classList.contains('green'))
+htmlTitle2.classList.toggle('green')
+console.log(htmlTitle2.classList.contains('green'))
+
+
+// Работа с атрибутами. Прослушка событий. Изображение
+
+/*
+    getAttribute(attrName) - Возвращает значение указанного атрибута
+    setAttribute(name, value) - Добавляет указанные атрибут и его значение к элементу
+    hasAttribute(attrName) - Возвращает true при наличии у элемента указанного атрибута
+    removeAttribute(attrName) - Удаляет указанный атрибут
+
+    toggLeAttribute(name, force) — ДобаВляет новый атрибут при отсутствии или удаляет существующий атрибут.
+    hasAttributes() — Возвращает true, если у элемента имеются какие-либо атрибуты
+    getAttributesNames() — возвращает названия атрибутов элемента
+ */
+
+const img = document.querySelector('#logo')
+const src = img.getAttribute('src')
+console.log(src)
+
+img.setAttribute('src', './img/php.png');
+img.setAttribute('width', '500px');
+
+const button = document.querySelector('#button')
+button.value = 'Delete png'
+
+const div = document.querySelector('.example-block')
+let removed = false
+
+button.addEventListener('click', () => {
+    if (!removed) {
+        img.remove();
+        removed = true;
+    } else {
+        div.prepend(img);
+        removed = false;
+    }
+});
+
+// Прослушка событий 2. Форма
+const inputtText = document.querySelector('#input-text');
+const textBlock = document.querySelector('#text-block');
+
+inputtText.addEventListener('input', () => {
+textBlock.innerHTML = inputtText.value;
+})
+
+// Прослушка событий 3. event
+
+const list = document.querySelector( '#list');
+list.addEventListener( 'click', function () {
+    console.log(this);
+})

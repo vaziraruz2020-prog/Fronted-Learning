@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoffeePass — подписка на кофе</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* дополнительные точечные стили для теней и плавности */
+    .card-shadow {
+      box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.05), 0 8px 15px -6px rgba(0, 0, 0, 0.1);
+    }
+    .svg-glow {
+      filter: drop-shadow(0 8px 12px rgba(180, 83, 9, 0.25));
+    }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+
+<!-- верхняя панель (лого + меню + кнопка) -->
+<header class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between flex-wrap gap-4">
+  <div class="text-2xl font-bold text-amber-800 tracking-tight">CoffeePass<span class="text-amber-600">.</span></div>
+  <nav class="flex items-center gap-7 text-stone-600 font-medium">
+    <a href="#how" class="hover:text-amber-700 transition">Как работает</a>
+    <a href="#pricing" class="hover:text-amber-700 transition">Тарифы</a>
+    <a href="#reviews" class="hover:text-amber-700 transition">Отзывы</a>
+    <a href="#faq" class="hover:text-amber-700 transition">FAQ</a>
+  </nav>
+  <a href="#apply" class="bg-amber-700 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md hover:bg-amber-800 transition">Оформить</a>
+</header>
+
+<!-- HERO: заголовок + кнопки + SVG справа -->
+<section class="max-w-6xl mx-auto px-6 py-12 flex flex-col lg:flex-row items-center gap-12">
+  <div class="flex-1 text-center lg:text-left">
+    <h1 class="text-5xl lg:text-6xl font-extrabold tracking-tight text-stone-800 leading-tight">
+      Твой утренний ритуал <br><span class="text-amber-700">без очередей</span>
+    </h1>
+    <p class="text-lg text-stone-500 mt-5 max-w-xl mx-auto lg:mx-0">
+      Одна подписка — любимая кофейня каждый день. Забирай напиток в любой точке города и плати меньше.
+    </p>
+    <div class="flex items-center justify-center lg:justify-start gap-4 mt-8">
+      <a href="#apply" class="bg-amber-700 text-white px-7 py-3 rounded-full font-semibold shadow-lg hover:bg-amber-800 transition">Оформить подписку</a>
+      <a href="#pricing" class="border border-amber-300 text-amber-800 px-7 py-3 rounded-full font-semibold hover:bg-amber-50 transition">Посмотреть тарифы</a>
+    </div>
+  </div>
+  <div class="flex-1 flex justify-center">
+    <!-- современное SVG: кофейная чашка с паром, градиенты, тени/blur -->
+    <svg width="380" height="320" viewBox="0 0 380 320" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full max-w-sm svg-glow">
+      <g filter="url(#filter0_f_1_2)">
+        <ellipse cx="190" cy="250" rx="100" ry="25" fill="url(#paint0_radial)" fill-opacity="0.4" />
+      </g>
+      <rect x="110" y="140" width="140" height="90" rx="20" fill="url(#paint1_linear)" stroke="#B68B6A" stroke-width="2" />
+      <path d="M250 170 L280 180 L280 220 L250 210 Z" fill="url(#paint2_linear)" stroke="#9C6F4A" stroke-width="2" />
+      <ellipse cx="180" cy="130" rx="35" ry="20" fill="#FEF2E0" stroke="#B68B6A" stroke-width="1.5" />
+      <path d="M150 135 Q180 155, 210 135" stroke="#E3C9AC" stroke-width="3" fill="none" stroke-linecap="round" />
+      <g filter="url(#filter1_d)">
+        <circle cx="215" cy="115" r="12" fill="white" fill-opacity="0.8" />
+      </g>
+      <g filter="url(#filter2_blur)">
+        <ellipse cx="130" cy="110" rx="20" ry="10" fill="#FEF2E0" fill-opacity="0.9" />
+        <ellipse cx="250" cy="110" rx="20" ry="10" fill="#FEF2E0" fill-opacity="0.7" />
+      </g>
+      <defs>
+        <filter id="filter0_f_1_2" x="70" y="205" width="240" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+          <feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur"/>
+        </filter>
+        <filter id="filter1_d" x="195" y="95" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+          <feOffset dx="2" dy="2"/>
+          <feGaussianBlur stdDeviation="3"/>
+          <feComposite in2="hardAlpha" operator="out"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+        </filter>
+        <filter id="filter2_blur" x="110" y="85" width="160" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feGaussianBlur stdDeviation="5"/>
+        </filter>
+        <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(190 250) rotate(90) scale(30 100)">
+          <stop stop-color="#B45309"/>
+          <stop offset="1" stop-color="#FBBF24" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="paint1_linear" x1="110" y1="185" x2="250" y2="185" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#E7D6C2"/>
+          <stop offset="1" stop-color="#C9A78B"/>
+        </linearGradient>
+        <linearGradient id="paint2_linear" x1="250" y1="190" x2="280" y2="210" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#A67B5B"/>
+          <stop offset="1" stop-color="#7B4F2E"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+</section>
+
+<!-- КАК РАБОТАЕТ (3 шага) -->
+<section id="how" class="max-w-6xl mx-auto px-6 py-16">
+  <h2 class="text-3xl font-bold text-center text-stone-800 mb-12">Как работает <span class="text-amber-700">CoffeePass</span></h2>
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="bg-white/80 backdrop-blur-sm p-8 rounded-3xl card-shadow text-center border border-stone-200">
+      <div class="text-5xl mb-4 text-amber-700">①</div>
+      <h3 class="text-xl font-semibold mb-2">Выбери тариф</h3>
+      <p class="text-stone-500">Start, Plus или Pro — на любой вкус и ритм жизни.</p>
+    </div>
+    <div class="bg-white/80 backdrop-blur-sm p-8 rounded-3xl card-shadow text-center border border-stone-200">
+      <div class="text-5xl mb-4 text-amber-700">②</div>
+      <h3 class="text-xl font-semibold mb-2">Забирай каждый день</h3>
+      <p class="text-stone-500">Проходи в любую кофейню-партнёр и покажи QR-код.</p>
+    </div>
+    <div class="bg-white/80 backdrop-blur-sm p-8 rounded-3xl card-shadow text-center border border-stone-200">
+      <div class="text-5xl mb-4 text-amber-700">③</div>
+      <h3 class="text-xl font-semibold mb-2">Наслаждайся</h3>
+      <p class="text-stone-500">Латте, капучино или фильтр — твой напиток ждёт.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ТАРИФЫ (3 карточки) -->
+<section id="pricing" class="max-w-6xl mx-auto px-6 py-16">
+  <h2 class="text-3xl font-bold text-center text-stone-800 mb-12">Тарифы <span class="text-amber-700">CoffeePass</span></h2>
+  <div class="grid md:grid-cols-3 gap-8">
+    <!-- Start -->
+    <div class="bg-white rounded-3xl p-8 card-shadow border border-stone-200 flex flex-col">
+      <h3 class="text-2xl font-bold mb-2">Start</h3>
+      <p class="text-4xl font-extrabold text-amber-800 mb-4">990 ₽<span class="text-base font-normal text-stone-400">/мес</span></p>
+      <ul class="space-y-2 text-stone-600 flex-1 mb-8">
+        <li>✓ 1 напиток в день</li>
+        <li>✓ 200+ кофеен</li>
+        <li>✓ Чёрный чай / эспрессо</li>
+      </ul>
+      <a href="#apply" class="block text-center border border-amber-700 text-amber-800 px-5 py-3 rounded-full font-medium hover:bg-amber-50 transition">Выбрать</a>
+    </div>
+    <!-- Plus -->
+    <div class="bg-white rounded-3xl p-8 card-shadow border border-amber-300 ring-2 ring-amber-200/50 flex flex-col">
+      <h3 class="text-2xl font-bold mb-2">Plus</h3>
+      <p class="text-4xl font-extrabold text-amber-800 mb-4">1 490 ₽<span class="text-base font-normal text-stone-400">/мес</span></p>
+      <ul class="space-y-2 text-stone-600 flex-1 mb-8">
+        <li>✓ 2 напитка в день</li>
+        <li>✓ все кофейни Start+</li>
+        <li>✓ любые молочные напитки</li>
+        <li>✓ сиропы бесплатно</li>
+      </ul>
+      <a href="#apply" class="block text-center bg-amber-700 text-white px-5 py-3 rounded-full font-medium hover:bg-amber-800 transition">Выбрать</a>
+    </div>
+    <!-- Pro -->
+    <div class="bg-white rounded-3xl p-8 card-shadow border border-stone-200 flex flex-col">
+      <h3 class="text-2xl font-bold mb-2">Pro</h3>
+      <p class="text-4xl font-extrabold text-amber-800 mb-4">2 490 ₽<span class="text-base font-normal text-stone-400">/мес</span></p>
+      <ul class="space-y-2 text-stone-600 flex-1 mb-8">
+        <li>✓ 3 напитка в день</li>
+        <li>✓ все кофейни города</li>
+        <li>✓ авторские напитки</li>
+        <li>✓ + десерт по пятницам</li>
+      </ul>
+      <a href="#apply" class="block text-center border border-amber-700 text-amber-800 px-5 py-3 rounded-full font-medium hover:bg-amber-50 transition">Выбрать</a>
+    </div>
+  </div>
+</section>
+
+<!-- ФОРМА ЗАЯВКИ (apply) -->
+<section id="apply" class="max-w-3xl mx-auto px-6 py-16">
+  <div class="bg-white/90 backdrop-blur-sm p-10 rounded-4xl card-shadow border border-stone-200">
+    <h2 class="text-3xl font-bold text-stone-800 mb-6 text-center">Оставь заявку</h2>
+    <p class="text-stone-500 text-center mb-8">Менеджер свяжется с вами в течение дня</p>
+    <form id="coffeeForm" class="space-y-5">
+      <div>
+        <label class="block text-sm font-medium text-stone-700 mb-1">Имя *</label>
+        <input type="text" id="name" placeholder="Александра" class="w-full px-5 py-3 border border-stone-300 rounded-2xl focus:ring-2 focus:ring-amber-300 outline-none">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-stone-700 mb-1">Телефон *</label>
+        <input type="tel" id="phone" placeholder="+7 (900) 123-45-67" class="w-full px-5 py-3 border border-stone-300 rounded-2xl focus:ring-2 focus:ring-amber-300 outline-none">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-stone-700 mb-1">Тариф *</label>
+        <select id="tariff" class="w-full px-5 py-3 border border-stone-300 rounded-2xl focus:ring-2 focus:ring-amber-300 outline-none bg-white">
+          <option value="" disabled selected>— выберите тариф —</option>
+          <option value="Start">Start (990 ₽)</option>
+          <option value="Plus">Plus (1490 ₽)</option>
+          <option value="Pro">Pro (2490 ₽)</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-stone-700 mb-1">Комментарий (необязательно)</label>
+        <textarea id="comment" rows="2" placeholder="пожелания по кофейне и т.п." class="w-full px-5 py-3 border border-stone-300 rounded-2xl focus:ring-2 focus:ring-amber-300 outline-none"></textarea>
+      </div>
+      <button type="button" id="submitBtn" class="w-full bg-amber-700 text-white py-4 rounded-2xl text-lg font-semibold hover:bg-amber-800 transition shadow-md mt-4">Отправить заявку</button>
+      <p class="text-xs text-stone-400 text-center mt-5">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ОТЗЫВЫ -->
+<section id="reviews" class="max-w-6xl mx-auto px-6 py-16">
+  <h2 class="text-3xl font-bold text-center text-stone-800 mb-12">Отзывы</h2>
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="bg-white p-8 rounded-3xl card-shadow border border-stone-200">
+      <div class="flex text-amber-400 text-xl mb-3">★★★★★</div>
+      <p class="text-stone-700 mb-4">«Кофе стал частью утра. Просто открываешь приложение и идёшь в ближайшую точку. Экономия бешеная!»</p>
+      <div class="font-semibold text-amber-800">— Елена, дизайнер</div>
+    </div>
+    <div class="bg-white p-8 rounded-3xl card-shadow border border-stone-200">
+      <div class="flex text-amber-400 text-xl mb-3">★★★★★</div>
+      <p class="text-stone-700 mb-4">«Взял Plus для всей семьи: жена берёт капучино, я фильтр. Окупается за 5 дней. Советую!»</p>
+      <div class="font-semibold text-amber-800">— Дмитрий, маркетолог</div>
+    </div>
+    <div class="bg-white p-8 rounded-3xl card-shadow border border-stone-200">
+      <div class="flex text-amber-400 text-xl mb-3">★★★★★</div>
+      <p class="text-stone-700 mb-4">«Я фанат фильтра, а в Pro ещё и десерт. Очень доволен, спасибо команде CoffeePass».</p>
+      <div class="font-semibold text-amber-800">— Кирилл, разработчик</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ (статичные блоки с разделителями) -->
+<section id="faq" class="max-w-4xl mx-auto px-6 py-16">
+  <h2 class="text-3xl font-bold text-center text-stone-800 mb-12">Часто задаваемые вопросы</h2>
+  <div class="bg-white rounded-3xl card-shadow divide-y divide-stone-200 border border-stone-200 overflow-hidden">
+    <div class="p-6">
+      <h3 class="text-xl font-semibold text-amber-800 mb-2">Как активировать подписку?</h3>
+      <p class="text-stone-600">После оплаты на почту приходит письмо с QR-кодом. Просто покажите его на кассе — напиток готов.</p>
+    </div>
+    <div class="p-6">
+      <h3 class="text-xl font-semibold text-amber-800 mb-2">Можно ли менять напиток в течение дня?</h3>
+      <p class="text-stone-600">Да, в рамках лимита тарифа. Например, Plus даёт 2 любых напитка в день, хоть разный кофе.</p>
+    </div>
+    <div class="p-6">
+      <h3 class="text-xl font-semibold text-amber-800 mb-2">Сколько кофеен участвует?</h3>
+      <p class="text-stone-600">Уже больше 300 по городу. Среди них Spoon, Coffee Drop, Chernyy i autres. Карта есть в личном кабинете.</p>
+    </div>
+    <div class="p-6">
+      <h3 class="text-xl font-semibold text-amber-800 mb-2">Можно ли приостановить подписку?</h2>
+        <p class="text-stone-600">Конечно. В профиле есть кнопка «заморозка» до 30 дней. Остаток дней сохраняется.</p>
+    </div>
+    <div class="p-6">
+      <h3 class="text-xl font-semibold text-amber-800 mb-2">Действует ли подписка на навынос?</h2>
+        <p class="text-stone-600">Да, можете взять с собой или пить внутри — без разницы.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ФУТЕР -->
+<footer class="bg-stone-100 border-t border-stone-200 py-10">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center text-stone-500 text-sm">
+    <div>© 2025 CoffeePass. Все права защищены.</div>
+    <div class="flex gap-6 mt-3 sm:mt-0">
+      <a href="#" class="hover:text-amber-700 transition">Политика</a>
+      <a href="#" class="hover:text-amber-700 transition">Оферта</a>
+      <a href="#" class="hover:text-amber-700 transition">Поддержка</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ОДИН ЕДИНСТВЕННЫЙ JS-БЛОК: валидация и алерт формы -->
+<script>
+  (function() {
+    const btn = document.getElementById('submitBtn');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        const name = document.getElementById('name')?.value.trim() || '';
+        const phone = document.getElementById('phone')?.value.trim() || '';
+        const tariff = document.getElementById('tariff')?.value || '';
+
+        if (name !== '' && phone !== '' && tariff !== '') {
+          alert('Заявка отправлена! Мы свяжемся с вами в течение дня.');
+        } else {
+          alert('Пожалуйста, заполните имя и телефон и выберите тариф.');
+        }
+      });
+    }
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+  background-color: rgba(0, 0, 0, 0.192);
+  max-height: 100vh;
+}
+
+.div {
+  margin-top: 30px;
+  margin-left: 300px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.span {
+  position: relative;
+  right: 70px;
+  margin: {
+    bottom: 30px;
+  }
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.dii {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  right: 125px;
+}
+.acc:open {
+  max-width: 137px;
+  padding-right: 3px;
+}
+.button {
+  color: aqua;
+  display: inline;
+  padding: 5.27px;
+  border: 3px solid rgba(39, 153, 219, 0.815);
+  border-radius: 5%;
+  margin-right: 20px;
+  min-width: 115px;
+}
+
+.p {
+  padding: 10px;
+  width: 500px;
+  position: relative;
+  top: 15px;
+  right: 180px;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.26) ;
+}

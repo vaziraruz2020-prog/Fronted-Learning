@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triply — Умный планировщик ваших путешествий</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+<header class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-100">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" fill="#0ea5e9"/>
+                <path d="M12 2L15 22L12 19L9 22L12 2Z" fill="white"/>
+            </svg>
+            <span class="text-2xl font-bold tracking-tight text-slate-800">Triply</span>
+        </div>
+        <nav class="hidden md:flex gap-8 font-medium text-slate-600">
+            <a href="#how" class="hover:text-sky-600 transition">Как работает</a>
+            <a href="#pricing" class="hover:text-sky-600 transition">Тарифы</a>
+            <a href="#reviews" class="hover:text-sky-600 transition">Отзывы</a>
+            <a href="#faq" class="hover:text-sky-600 transition">FAQ</a>
+        </nav>
+        <a href="#apply" class="bg-sky-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-sky-700 transition shadow-lg shadow-sky-200">Оформить</a>
+    </div>
+</header>
+
+<section class="pt-32 pb-20 gradient-bg">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-12 md:mb-0">
+            <h1 class="text-5xl md:text-6xl font-bold leading-tight text-slate-900 mb-6">
+                Путешествуйте <span class="text-sky-600">без хаоса</span> в документах
+            </h1>
+            <p class="text-lg text-slate-600 mb-8 max-w-lg">
+                Triply собирает маршруты, бронирования и чеклисты в одном приложении. Планируйте идеально, отдыхайте спокойно.
+            </p>
+            <div class="flex gap-4">
+                <a href="#apply" class="bg-sky-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-sky-700 transition">Начать планирование</a>
+                <a href="#pricing" class="bg-white text-sky-600 border border-sky-100 px-8 py-4 rounded-xl font-bold hover:bg-sky-50 transition">Цены</a>
+            </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+            <svg width="500" height="400" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#bae6fd;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect x="50" y="80" width="400" height="280" rx="20" fill="white" shadow="0 10px 15px rgba(0,0,0,0.1)"/>
+                <path d="M50 280L150 200L250 260L350 180L450 220V360H50V280Z" fill="#f0f9ff"/>
+                <path d="M50 280L150 200L250 260L350 180L450 220" stroke="#0ea5e9" stroke-width="3" stroke-dasharray="8 8"/>
+                <rect x="300" y="220" width="120" height="100" rx="12" fill="url(#grad1)"/>
+                <rect x="340" y="200" width="40" height="20" rx="4" stroke="#0ea5e9" stroke-width="4"/>
+                <line x1="330" y1="220" x2="330" y2="320" stroke="white" stroke-opacity="0.3" stroke-width="2"/>
+                <line x1="390" y1="220" x2="390" y2="320" stroke="white" stroke-opacity="0.3" stroke-width="2"/>
+                <path d="M250 140C238.954 140 230 148.954 230 160C230 175 250 195 250 195C250 195 270 175 270 160C270 148.954 261.046 140 250 140Z" fill="#ef4444"/>
+                <circle cx="250" cy="160" r="5" fill="white"/>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<section id="how" class="py-24 bg-white">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-16">Как работает Triply</h2>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="p-8">
+                <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold">1</div>
+                <h3 class="text-xl font-bold mb-4">Создайте поездку</h3>
+                <p class="text-slate-500">Введите даты и направление. Мы подготовим базовый каркас маршрута.</p>
+            </div>
+            <div class="p-8">
+                <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold">2</div>
+                <h3 class="text-xl font-bold mb-4">Добавьте брони</h3>
+                <p class="text-slate-500">Просто перешлите письма с билетами, и они появятся в вашем календаре.</p>
+            </div>
+            <div class="p-8">
+                <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold">3</div>
+                <h3 class="text-xl font-bold mb-4">Наслаждайтесь</h3>
+                <p class="text-slate-500">Получайте уведомления о вылетах и офлайн-доступ ко всем ваучерам.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="pricing" class="py-24 bg-slate-50">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-16">Выберите свой формат</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl transition">
+                <h3 class="text-lg font-semibold text-slate-500 mb-4">Start</h3>
+                <div class="text-4xl font-bold mb-6">Бесплатно</div>
+                <ul class="text-left space-y-4 mb-8 text-slate-600">
+                    <li>• 1 активная поездка</li>
+                    <li>• Ручной ввод данных</li>
+                    <li>• Чек-лист вещей</li>
+                    <li>• Офлайн доступ</li>
+                </ul>
+                <a href="#apply" class="block w-full py-3 border border-sky-600 text-sky-600 rounded-xl font-bold hover:bg-sky-50">Выбрать</a>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border-2 border-sky-500 shadow-2xl relative transform scale-105">
+                <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-sky-500 text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest">Хит</span>
+                <h3 class="text-lg font-semibold text-sky-500 mb-4">Plus</h3>
+                <div class="text-4xl font-bold mb-6">490 ₽ <span class="text-sm font-normal text-slate-400">/мес</span></div>
+                <ul class="text-left space-y-4 mb-8 text-slate-600">
+                    <li>• Неограниченно поездок</li>
+                    <li>• Импорт из почты</li>
+                    <li>• Групповой доступ</li>
+                    <li>• Контроль бюджета</li>
+                </ul>
+                <a href="#apply" class="block w-full py-3 bg-sky-600 text-white rounded-xl font-bold hover:bg-sky-700 transition">Выбрать</a>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl transition">
+                <h3 class="text-lg font-semibold text-slate-500 mb-4">Pro</h3>
+                <div class="text-4xl font-bold mb-6">990 ₽ <span class="text-sm font-normal text-slate-400">/мес</span></div>
+                <ul class="text-left space-y-4 mb-8 text-slate-600">
+                    <li>• Всё из Plus</li>
+                    <li>• Консьерж-сервис</li>
+                    <li>• Страховка включена</li>
+                    <li>• VIP-поддержка 24/7</li>
+                </ul>
+                <a href="#apply" class="block w-full py-3 border border-sky-600 text-sky-600 rounded-xl font-bold hover:bg-sky-50">Выбрать</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="apply" class="py-24 bg-white">
+    <div class="container mx-auto px-6 max-w-2xl">
+        <div class="bg-slate-900 rounded-3xl p-10 text-white">
+            <h2 class="text-3xl font-bold mb-8 text-center">Запросить персональный план</h2>
+            <form id="tripForm" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-medium mb-2">Ваше имя</label>
+                    <input type="text" id="userName" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-sky-500" placeholder="Александр">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">Телефон</label>
+                    <input type="tel" id="userPhone" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-sky-500" placeholder="+7 (999) 000-00-00">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">Тариф</label>
+                    <select id="userTariff" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-sky-500">
+                        <option value="">Выберите тариф...</option>
+                        <option value="Start">Start (Бесплатно)</option>
+                        <option value="Plus">Plus (490 ₽)</option>
+                        <option value="Pro">Pro (990 ₽)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">Комментарий (необязательно)</label>
+                    <textarea id="userComment" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-sky-500" rows="3"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-sky-500 hover:bg-sky-400 text-white font-bold py-4 rounded-xl transition duration-300">Запросить план</button>
+                <p class="text-xs text-slate-500 text-center">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности и условиями сервиса.</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section id="reviews" class="py-24 bg-slate-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-16 text-center">Что говорят путешественники</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm">
+                <p class="italic text-slate-600 mb-6">"Triply спас мой отпуск в Исландии. Все брони авто и отелей были под рукой даже без интернета."</p>
+                <div class="font-bold">— Артем, фотограф</div>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm">
+                <p class="italic text-slate-600 mb-6">"Лучший сервис для тех, кто любит планировать всё до мелочей. Чеклисты — просто находка."</p>
+                <div class="font-bold">— Марина, блогер</div>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm">
+                <p class="italic text-slate-600 mb-6">"Использовали семейный доступ для поездки в Сочи. Очень удобно следить за общим бюджетом."</p>
+                <div class="font-bold">— Иван, отец троих детей</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="py-24 bg-white">
+    <div class="container mx-auto px-6 max-w-3xl">
+        <h2 class="text-3xl font-bold mb-12 text-center">Частые вопросы</h2>
+        <div class="space-y-6">
+            <div class="pb-6 border-b border-slate-100">
+                <h3 class="text-lg font-bold mb-2">Как данные попадают в приложение?</h3>
+                <p class="text-slate-500">Вы можете добавлять их вручную или настроить автоматический импорт, пересылая письма от авиакомпаний на ваш личный Triply-адрес.</p>
+            </div>
+            <div class="pb-6 border-b border-slate-100">
+                <h3 class="text-lg font-bold mb-2">Работает ли приложение без интернета?</h3>
+                <p class="text-slate-500">Да, все ваши маршруты и загруженные документы сохраняются локально на устройстве.</p>
+            </div>
+            <div class="pb-6 border-b border-slate-100">
+                <h3 class="text-lg font-bold mb-2">Можно ли планировать поездку с друзьями?</h3>
+                <p class="text-slate-500">На тарифах Plus и Pro вы можете пригласить со-путешественников для совместного редактирования.</p>
+            </div>
+            <div class="pb-6 border-b border-slate-100">
+                <h3 class="text-lg font-bold mb-2">На каких устройствах работает Triply?</h3>
+                <p class="text-slate-500">Мы доступны в вебе, а также имеем нативные приложения для iOS и Android.</p>
+            </div>
+            <div class="pb-6 border-b border-slate-100">
+                <h3 class="text-lg font-bold mb-2">Безопасны ли мои данные?</h3>
+                <p class="text-slate-500">Мы используем банковское шифрование AES-256 для защиты всей вашей личной информации.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="py-12 bg-slate-900 text-slate-400">
+    <div class="container mx-auto px-6 flex flex-col md:row justify-between items-center border-t border-slate-800 pt-8">
+        <p>&copy; 2026 Triply. Все права защищены.</p>
+        <div class="flex gap-6 mt-4 md:mt-0">
+            <a href="#" class="hover:text-white transition">Политика конфиденциальности</a>
+            <a href="#" class="hover:text-white transition">Условия использования</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('tripForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const name = document.getElementById('userName').value.trim();
+        const phone = document.getElementById('userPhone').value.trim();
+        const tariff = document.getElementById('userTariff').value;
+
+        if (name !== "" && phone !== "" && tariff !== "") {
+            alert("Отлично! Мы подготовим план и свяжемся в течение дня.");
+            this.reset();
+        } else {
+            alert("Заполните имя, телефон и выберите тариф.");
+        }
+    });
+</script>
+</body>
+</html>

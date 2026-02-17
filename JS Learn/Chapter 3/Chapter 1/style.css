@@ -118,3 +118,11 @@ h1 {
 	font-weight: 20;
 	margin-right: 10px;
 }
+
+.done {
+	text-decoration: line-through;
+}
+
+.delete-btn {
+	margin-left: 15px;
+}

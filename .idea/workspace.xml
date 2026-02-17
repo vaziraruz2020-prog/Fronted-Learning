@@ -6,13 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="4f1099f4-3ca3-4874-8d4c-c4ca6c4d1879" name="Изменения" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS Learn/Chapter 3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS Learn/Chapter 3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS Learn/Chapter 3/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS Learn/Chapter 3/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS Learn/Chapter 3/img/js.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS Learn/Chapter 3/img/php.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS Learn/Chapter 3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS Learn/Chapter 3/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS Learn/Chapter 3/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SCSS Learn/SCSS unit 1/dist/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/SCSS Learn/SCSS unit 1/dist/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SCSS Learn/SCSS unit 1/dist/css/css.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/SCSS Learn/SCSS unit 1/dist/css/css.css.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,24 +40,27 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2025.3.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -62,6 +79,20 @@
       <workItem from="1770405786696" duration="232000" />
       <workItem from="1770406048929" duration="93000" />
       <workItem from="1770450377196" duration="9895000" />
+      <workItem from="1770540939686" duration="625000" />
+      <workItem from="1770648991375" duration="9268000" />
+      <workItem from="1770828567969" duration="3898000" />
+      <workItem from="1770877972293" duration="726000" />
+      <workItem from="1770880320770" duration="9171000" />
+      <workItem from="1770993806932" duration="7392000" />
+      <workItem from="1771162869499" duration="9118000" />
+      <workItem from="1771218637728" duration="3207000" />
+      <workItem from="1771253868388" duration="1216000" />
+      <workItem from="1771257852224" duration="1607000" />
+      <workItem from="1771304756962" duration="481000" />
+      <workItem from="1771342059459" duration="1732000" />
+      <workItem from="1771345646635" duration="949000" />
+      <workItem from="1771349671546" duration="15000" />
     </task>
     <servers />
   </component>

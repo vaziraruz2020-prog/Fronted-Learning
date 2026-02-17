@@ -1,0 +1,15 @@
+{
+  "name": "chapter-2",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "main": "html.html",
+  "scripts": {},
+  "dependencies": {
+    "sass": "^1.97.3"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}

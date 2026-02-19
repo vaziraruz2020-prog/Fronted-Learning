@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f1099f4-3ca3-4874-8d4c-c4ca6c4d1879" name="Изменения" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS Learn/Chapter 3/img/js.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS Learn/Chapter 3/img/php.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS Learn/Chapter 3/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS Learn/Chapter 3/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS Learn/Chapter 3/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCSS Learn/SCSS unit 1/dist/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/SCSS Learn/SCSS unit 1/dist/css/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCSS Learn/SCSS unit 1/dist/css/css.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/SCSS Learn/SCSS unit 1/dist/css/css.css.map" afterDir="false" />
-    </list>
+    <list default="true" id="4f1099f4-3ca3-4874-8d4c-c4ca6c4d1879" name="Изменения" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,6 +84,7 @@
       <workItem from="1771342059459" duration="1732000" />
       <workItem from="1771345646635" duration="949000" />
       <workItem from="1771349671546" duration="15000" />
+      <workItem from="1771390957496" duration="495000" />
     </task>
     <servers />
   </component>

@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f1099f4-3ca3-4874-8d4c-c4ca6c4d1879" name="Изменения" comment="" />
+    <list default="true" id="4f1099f4-3ca3-4874-8d4c-c4ca6c4d1879" name="Изменения" comment="">
+      <change afterPath="$PROJECT_DIR$/Frontend_start/Верстка/scripts/order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend_start/Верстка/scripts/track.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend_start/AI's websites/Верстка/fonts/Roboto-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend_start/AI's websites/Верстка/fonts/Roboto-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend_start/AI's websites/Верстка/fonts/Roboto-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend_start/AI's websites/Верстка/images/main-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend_start/AI's websites/Верстка/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend_start/AI's websites/Верстка/styles/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend_start/AI's websites/Верстка/styles/base_adaptive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend_start/AI's websites/Верстка/styles/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend_start/AI's websites/Верстка/styles/index_adaptive.css" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +26,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -52,6 +65,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sanch\Desktop\Искандер\Программирование\Frontend\Frontend_start\Верстка\scripts" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -85,6 +103,11 @@
       <workItem from="1771345646635" duration="949000" />
       <workItem from="1771349671546" duration="15000" />
       <workItem from="1771390957496" duration="495000" />
+      <workItem from="1771477367060" duration="1469000" />
+      <workItem from="1771561040137" duration="5476000" />
+      <workItem from="1771602731998" duration="738000" />
+      <workItem from="1771650164188" duration="2055000" />
+      <workItem from="1771917459468" duration="594000" />
     </task>
     <servers />
   </component>
